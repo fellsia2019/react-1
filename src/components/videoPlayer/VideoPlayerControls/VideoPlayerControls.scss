@@ -1,0 +1,41 @@
+$b: '.video-player-controls';
+
+#{$b} {
+  background-color: rgba($color-dark, 0.85);
+  color: $color-light;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30px auto 30px;
+  gap: 15px;
+
+  // .video-player-controls__btn-control
+  &__btn-control {
+    cursor: pointer;
+    border: 1px solid $color-light;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .video-player-controls__progress
+  &__progress {
+    height: 100%;
+    background-color: rgba($color-light, 0.5);
+
+    &:hover {
+      background-color: rgba($color-light, 0.7);
+    }
+
+    // .video-player-controls__progress-bar
+    &-bar {
+      height: 100%;
+      background-color: $color-light;
+      pointer-events: none;
+      touch-action: none;
+    }
+  }
+}

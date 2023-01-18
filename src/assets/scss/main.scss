@@ -1,0 +1,27 @@
+@import './global/reset.scss';
+
+body {
+  font-family: $ff-main;
+  font-size: $fsz-main;
+  font-weight: $fw-main;
+  line-height: $lh-main;
+  color: $color-dark;
+}
+
+.container {
+  max-width: 100%;
+  width: $container-desktop-lg;
+  margin: 0 auto;
+  padding: 0 $container-gap;
+
+  @media screen and (max-width: $breakpoint-desktop-lg) {
+    width: $container-desktop-md;
+  }
+  @media screen and (max-width: $breakpoint-desktop-md) {
+    width: $container-tablet;
+    padding: 0 $container-gap-mobile;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: $container-mobile;
+  }
+}

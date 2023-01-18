@@ -1,0 +1,30 @@
+$b: '.video-player';
+
+#{$b} {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-color: $color-dark;
+
+  // .video-player__video--is-fullscreen
+  &--is-fullscreen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+
+  // .video-player__video
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .video-player__controls
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
